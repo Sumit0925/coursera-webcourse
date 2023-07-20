@@ -1,0 +1,168 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande';
+}
+
+.row {
+  width: 100%;
+
+}
+
+
+.menu {
+  font-family: cursive;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-top: 30px;
+}
+
+.cotainer {
+  position: relative;
+  margin: 20px;
+}
+
+.chicken,
+.beef,
+.sushi {
+  position: relative;
+  top: 0;
+  background-color: gray;
+  margin: 20px;
+  padding: 25px;
+  border: 5px solid black;
+
+
+}
+
+#chicken,
+#beef,
+#sushi {
+  position: absolute;
+  right: 0;
+  top: 0;
+  border-left: 5px solid black;
+  border-bottom: 5px solid black;
+  padding: 6px 90px;
+  font-family: cursive;
+
+  font-weight: bold;
+}
+
+#chicken {
+  background-color: #a90505;
+}
+
+#beef {
+  background-color: #a96a05;
+}
+
+#sushi {
+  background-color: #5aa905;
+}
+
+.chicken p,
+.sushi p,
+.beef p {
+  margin-top: 30px;
+  text-align: justify;
+  font-size: 100%;
+
+
+}
+
+/* Simple Responsive Framework. */
+/*------ Desktop ------*/
+@media (min-width: 992px) {
+
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
+    float: left;
+  }
+
+  .col-lg-1 {
+    width: 8.33%;
+  }
+
+  .col-lg-2 {
+    width: 16.66%;
+  }
+
+  .col-lg-3 {
+    width: 25%;
+  }
+
+  .col-lg-4 {
+    width: 33.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  .col-lg-6 {
+    width: 50%;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-8 {
+    width: 66.66%;
+  }
+
+  .col-lg-9 {
+    width: 74.99%;
+  }
+
+  .col-lg-10 {
+    width: 83.33%;
+  }
+
+  .col-lg-11 {
+    width: 91.66%;
+  }
+
+  .col-lg-12 {
+    width: 100%;
+  }
+
+}
+
+
+/*------ Tablet ------*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-lg-4 {
+    width: 50%;
+    float: left;
+  }
+
+  .col-lg-tablet {
+    width: 100%;
+    float: left;
+  }
+}
+
+
+/*------ Mobile ------*/
+@media (max-width: 767px) {
+  .col-lg-4 {
+    width: 100%;
+    float: left;
+  }
+}
